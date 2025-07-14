@@ -157,7 +157,6 @@ body {
 }
 
 
-/* Footer */
 
 footer {
     margin-top: 60px;
@@ -183,6 +182,7 @@ footer a:hover {
 
 /* About */
 
+
 .about-section {
     background-color: #000000;
     color: #ffffff;
@@ -202,7 +202,7 @@ footer a:hover {
 }
 
 
-/* Paragraphs */
+
 
 .about-section p {
     color: #ffffff;
@@ -212,7 +212,8 @@ footer a:hover {
 }
 
 
-/* List Style */
+
+
 
 .about-section ul {
     padding-left: 20px;
@@ -232,6 +233,7 @@ footer a:hover {
 
 
 /* Video */
+
 
 .video-section {
     background: linear-gradient(135deg, #000000 0%, #000000 100%);
@@ -254,6 +256,7 @@ footer a:hover {
 
 
 /* Projects */
+
 
 .projects-section {
     background: linear-gradient(135deg, #000000 0%, #000000 100%);
@@ -280,6 +283,7 @@ footer a:hover {
 
 
 /* Skills */
+
 
 .skills-section {
     background: linear-gradient(135deg, #000000 0%, #000000 100%);
@@ -317,6 +321,7 @@ footer a:hover {
 
 /* Languages */
 
+
 .languages-section {
     background: linear-gradient(135deg, #000000 0%, #000000 100%);
     color: #faf5f5;
@@ -349,6 +354,7 @@ footer a:hover {
 
 /* Contact */
 
+
 .contact-section {
     background: linear-gradient(135deg, #000000 0%, #000000 100%);
     color: #ffffff;
@@ -378,6 +384,7 @@ footer a:hover {
 
 
 /* Contact Form */
+
 
 .contact-form {
     margin-top: 50px;
@@ -436,6 +443,7 @@ footer a:hover {
 
 /* CV */
 
+
 .cv-section {
     background: linear-gradient(135deg, #000000 0%, #000000 100%);
     color: white;
@@ -476,6 +484,7 @@ a.download-btn:hover {
 
 /* Thank You */
 
+
 .thankyou-section {
     background-color: #000;
     text-align: center;
@@ -502,6 +511,7 @@ a.download-btn:hover {
 
 /* Text animation */
 
+
 @keyframes animateText {
     0% {
         background-position: 0% 50%;
@@ -512,7 +522,7 @@ a.download-btn:hover {
 }
 
 
-/* Responsive */
+
 
 @media (max-width: 768px) {
     .thankyou-section h1 {
