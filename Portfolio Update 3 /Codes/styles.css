@@ -1,0 +1,440 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #000000;
+    background: linear-gradient(135deg, #111112 0%, #000000 100%);
+    min-height: 100vh;
+}
+
+.section {
+    min-height: 100vh;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    padding: 15px 0;
+    box-shadow: 0 6px 8px rgb(255, 255, 255);
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    box-shadow: 0 4px 6px rgb(255, 255, 255);
+}
+
+.nav-bar a:hover {
+    background: rgb(120, 12, 12);
+    transform: translateY(-2px);
+}
+
+
+/* Body Style suru */
+
+.welcome-text {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(270deg, #ff4d4d, /* Red */
+    #4dff4d, #4d4dff, #ffcc00, #ff66cc, #00ffff, #ff4d4d/* Red again to loop smoothly */
+    );
+    background-size: 1000% 1000%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animateText 6s ease infinite;
+    margin-bottom: 60px;
+}
+
+@keyframes animateText {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.download-link {
+    display: inline-block;
+    padding: 14px 32px;
+    background-color: #1f1f1f;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 40px;
+    border: 2px solid #00f2ff;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 10px #00f2ff88;
+    font-size: 1.1rem;
+}
+
+.download-link:hover {
+    background-color: #ff0000;
+    color: #ffffff;
+    box-shadow: 0 0 20px #ff0000, 0 0 40px #ff272799;
+    transform: scale(1.05);
+}
+
+
+/* Home Button Style */
+
+.home-box {
+    border: 2px solid #00ccff;
+    padding: 15px 30px;
+    border-radius: 30px;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 8px rgb(255, 255, 255);
+}
+
+.home-box a {
+    color: #29a1bf;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.home-box:hover {
+    background-color: #f9feff;
+}
+
+.home-box:hover a {
+    color: black;
+}
+
+
+/* Home */
+
+.home-section {
+    background: linear-gradient(135deg, #0d0c0d 0%, #161516 100%);
+    color: white;
+    text-align: center;
+    box-shadow: 0 6px 8px rgb(255, 255, 255);
+}
+
+.profile-pic {
+    width: 290px;
+    height: 360px;
+    border-radius: 10%;
+    object-fit: cover;
+    border: 5px solid rgb(0, 0, 0);
+    box-shadow: 0 8px 8px rgb(243, 241, 241);
+    margin-bottom: 20px;
+}
+
+footer {
+    margin-top: 60px;
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgb(255, 255, 255);
+    margin: 0 8px;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #e72222;
+    box-shadow: 0 4px 8px rgb(255, 255, 255);
+}
+
+
+/* About */
+
+.about-section {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+.about-section h2 {
+    color: #ffffff;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    border-left: 5px solid #ffffff;
+    padding-left: 12px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+}
+
+.about-section p {
+    color: #ffffff;
+    line-height: 1.8;
+    font-size: 1.05rem;
+    margin-bottom: 20px;
+}
+
+.about-section ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.about-section ul li {
+    color: #e8e8e8;
+    margin-bottom: 10px;
+}
+
+.about-section .content-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+
+/* Projects */
+
+.projects-section {
+    background: linear-gradient(135deg, #000000 0%, #000000 100%);
+    color: #ffffff;
+}
+
+.project-card {
+    background: rgb(0, 0, 0);
+    padding: 30px;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgb(255, 255, 255);
+    max-width: 600px;
+    width: 100%;
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+
+/* Contact */
+
+.contact-section {
+    background: linear-gradient(135deg, #000000 0%, #000000 100%);
+    color: #ffffff;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.contact-card {
+    background: rgb(0, 0, 0);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgb(255, 252, 252);
+}
+
+.contact-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+
+/* Contact Form */
+
+.contact-form {
+    margin-top: 50px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #000000;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgb(255, 255, 255);
+    text-align: left;
+}
+
+.contact-form h2 {
+    text-align: center;
+    color: #4db8ff;
+    margin-bottom: 25px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #111;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    background-color: #1a1a1a;
+    box-shadow: 0 0 8px #4db8ff;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4db8ff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #3399dd;
+}
+
+
+/* CV */
+
+.cv-section {
+    background: linear-gradient(135deg, #000000 0%, #000000 100%);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    position: relative;
+    box-shadow: 0 -4px 20px rgba(255, 255, 255, 0.8);
+}
+
+.cv-section img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 10px 30px rgba(254, 252, 252, 0.999);
+}
+
+a.download-btn {
+    display: inline-block;
+    padding: 22px 188px;
+    background: linear-gradient(135deg, #000000, #1e2a38);
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    box-shadow: 0 7px 12px rgba(255, 255, 255, 0.6);
+    transition: all 0.3s ease;
+}
+
+a.download-btn:hover {
+    background: linear-gradient(135deg, #f51a1a, #281745);
+    box-shadow: 0 0 16px rgb(255, 52, 52);
+    transform: scale(1.05);
+    color: #fff;
+}
+
+
+/* Thank You */
+
+.thankyou-section {
+    background-color: #000;
+    text-align: center;
+    padding: 60px 20px;
+    overflow: hidden;
+}
+
+.thankyou-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(270deg, #ff0055, #00ffae, #00c3ff, #ffcc00, #ff0055);
+    background-size: 1000% 1000%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animateText 7s linear infinite;
+    margin-bottom: 20px;
+}
+
+.thankyou-section p {
+    color: #ccc;
+    font-size: 1.2rem;
+}
+
+@keyframes animateText {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .thankyou-section h1 {
+        font-size: 2.2rem;
+    }
+    .thankyou-section p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .thankyou-section h1 {
+        font-size: 1.8rem;
+    }
+}
+
+.gif-container img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin: 20px 0;
+    box-shadow: 0 10px 30px rgba(254, 252, 252, 0.999);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
