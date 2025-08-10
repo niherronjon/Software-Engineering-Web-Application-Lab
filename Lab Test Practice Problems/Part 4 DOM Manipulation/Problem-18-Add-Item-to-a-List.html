@@ -1,0 +1,53 @@
+HTML
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JS Practice</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+        }
+        
+        .dark-mode {
+            background-color: #c86969;
+            color: rgb(252, 54, 54);
+        }
+        
+        #todo-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        #todo-list li {
+            padding: 8px;
+            border-bottom: 1px solid #d92e2e;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="welcome-message">Hello, Guest!</h1>
+    <button id="change-text-btn">Change Greeting</button>
+
+    <hr>
+
+    <p>Click the button to toggle dark mode.</p>
+    <button id="toggle-mode-btn">Toggle Light/Dark Mode</button>
+
+    <hr>
+
+    <h2>My To-Do List</h2>
+    <ul id="todo-list">
+        <li>Learn JavaScript</li>
+    </ul>
+
+    <input type="text" id="new-item-input" placeholder="Add a new item">
+    <button id="add-item-btn">Add Item</button>
+
+    <script src="Problem-18-Add-Item-to-a-List.js"></script>
+</body>
+
+</html>
